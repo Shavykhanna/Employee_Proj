@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/work/Projects/Employee_Proj/Employee_Proj/Employee_Proj.csproj": {}
+  },
+  "projects": {
+    "/Volumes/work/Projects/Employee_Proj/Employee_Proj/Employee_Proj.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/work/Projects/Employee_Proj/Employee_Proj/Employee_Proj.csproj",
+        "projectName": "Employee_Proj",
+        "projectPath": "/Volumes/work/Projects/Employee_Proj/Employee_Proj/Employee_Proj.csproj",
+        "packagesPath": "/Users/shavy/.nuget/packages/",
+        "outputPath": "/Volumes/work/Projects/Employee_Proj/Employee_Proj/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/shavy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
