@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+// removed the UseSqlServer Error with Entityframework namespace
+using Microsoft.EntityFrameworkCore; 
+using Employee_Proj.Data;
 
 namespace Employee_Proj
 {
@@ -28,7 +32,9 @@ namespace Employee_Proj
 
             services.AddControllers();
 
-            services.AddDbContext<AppDbContext>(OptionsBuilderConfigurationExtensions => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
 

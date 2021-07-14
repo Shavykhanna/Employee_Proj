@@ -1,4 +1,3 @@
-/Volumes/work/Projects/Employee_Proj/Employee_Proj/obj/Debug/net5.0/Employee_Proj.csproj.AssemblyReference.cache
 /Volumes/work/Projects/Employee_Proj/Employee_Proj/obj/Debug/net5.0/Employee_Proj.GeneratedMSBuildEditorConfig.editorconfig
 /Volumes/work/Projects/Employee_Proj/Employee_Proj/obj/Debug/net5.0/Employee_Proj.AssemblyInfoInputs.cache
 /Volumes/work/Projects/Employee_Proj/Employee_Proj/obj/Debug/net5.0/Employee_Proj.AssemblyInfo.cs
