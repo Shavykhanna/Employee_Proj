@@ -28,7 +28,7 @@ namespace Employee_Proj.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddEmployee([FromBody] EmployeeController objEmployee)
+        public async Task<IActionResult> AddEmployee([FromBody] Employee objEmployee)
         {
             if (!ModelState.IsValid)
             {
@@ -40,10 +40,10 @@ namespace Employee_Proj.Controllers
             return new JsonResult("Employee created Successfully");
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateEmployee([FromRoute] int id, [FromBody] EmployeeController objEmployee)
+        [HttpPut("{Id}")]
+        public async Task<IActionResult> UpdateEmployee([FromRoute] int Id, [FromBody] Employee objEmployee)
         {
-            if (objEmployee == null || id != objEmployee.id)
+            if (objEmployee == null || Id != objEmployee.Id)
             {
                 return new JsonResult("Employee was not found");
 
@@ -56,10 +56,10 @@ namespace Employee_Proj.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
+        [HttpDelete("{Id}")]
+        public async Task<IActionResult> DeleteEmployee([FromRoute] int Id)
         {
-            var findEmployee = await _db.Employees.FindAsync(id);
+            var findEmployee = await _db.Employees.FindAsync(Id);
             if (findEmployee == null)
             {
                 return NotFound();
