@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{052D1206-9699-4C34-B7D3-99936B19E197}|Default">
+  <MonoDevelop.Ide.ItemProperties.Employee__Proj PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Employee_Proj/Program.cs">
+    <Files>
+      <File FileName="Employee_Proj/Models/Employee.cs" Line="16" Column="10" />
+      <File FileName="Employee_Proj/appsettings.json" Line="1" Column="1" />
+      <File FileName="Employee_Proj/Data/AppDbContext.cs" Line="9" Column="71" />
+      <File FileName="Employee_Proj/Startup.cs" Line="47" Column="49" />
+      <File FileName="Employee_Proj/Migrations/AppDbContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="Employee_Proj/Controllers/EmployeeController.cs" Line="30" Column="19" />
+      <File FileName="Employee_Proj/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="Employee_Proj/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Employee_Proj" expanded="True">
+            <Node name="Employee_Proj" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
