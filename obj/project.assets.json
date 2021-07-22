@@ -6093,7 +6093,7 @@
       "outputPath": "/Volumes/work/Projects/Employee_Proj/Employee_Proj/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/shavy/.nuget/NuGet/NuGet.Config"
+        "/Users/shavy/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6154,7 +6154,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }

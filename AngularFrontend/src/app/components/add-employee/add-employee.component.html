@@ -1,0 +1,59 @@
+<br/>
+<div class="container col-md-6">
+  <div class="card card-body" style="background-color: rgb(219, 231, 221);">
+    <div class="container-fluid">
+        <h4>Employee Registeration!</h4>
+      
+<hr/>
+    <form ng-click="add()">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="employeefname">First Name</label>
+            <input type="text" class="form-control" ng-model="employeefname" id="employeefname" placeholder="Enter First Name" required>
+        </div> <br/>
+
+            <div class="form-group">
+                <label for="employeelname">Last Name</label>
+                <input type="text" class="form-control" ng-model="employeelname" id="employeelname" placeholder="Enter Last Name" required>
+            </div>
+        <br/>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="employeetaddress2">Phone Number</label>
+            <input type="text" class="form-control" ng-model="employeephone" id="employeephone" placeholder="Enter Phone Number" required>
+        </div>
+        <br/>
+       
+            <!-- <div class="form-group col-md-4">
+                <label for="employeestate">State</label>
+                <select id="employeestate" class="form-control" required>
+                    <option selected>Choose...</option>
+                    <option>NSW</option>
+                    <option>QLD</option>
+                    <option>ACT</option>
+                    <option>VIC</option>
+                    <option>WA</option>
+                    <option>SA</option>
+                    <option>NT</option>
+                    <option>Tas</option>
+                </select>
+            </div> -->
+           
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" ng-model="employeeagree" id="employeeagree" required> 
+                <label class="form-check-label" for="employeeagree">
+                    I confirm that I agree to the terms and conditions of Employee Management System
+                </label>
+            </div>
+        </div>
+        <br/>
+        <div class="form-row">
+        <div class="form-group">
+         <button type="submit" class="btn btn-success btn-lg btn-block form-control" ng-model="employeeaddbtn" id="employeeaddbtn"> Add Employee</button>
+        </div>
+</div>
+</form>
+</div>
