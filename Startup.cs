@@ -14,11 +14,16 @@ using Microsoft.Extensions.Options;
 // removed the UseSqlServer Error with Entityframework namespace
 using Microsoft.EntityFrameworkCore; 
 using Employee_Proj.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace Employee_Proj
 {
     public class Startup
     {
+
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -35,6 +40,17 @@ namespace Employee_Proj
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("http://localhost:4200",
+                                                          "http://localhost:5001/api/employee");
+                                  });
+            });
+           
         }
 
 
@@ -53,10 +69,18 @@ namespace Employee_Proj
 
             app.UseAuthorization();
 
+            app.UseCors();
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapGet("/echo", context => context.Response.WriteAsync("echo")).RequireCors(MyAllowSpecificOrigins);
+                endpoints.MapControllers().RequireCors(MyAllowSpecificOrigins);
             });
+
+            //app.UseCors(MyAllowSpecificOrigins);
+
+            //app.UseCors("CorsPolicy");
+            //app.UseMvc();
         }
     }
 }

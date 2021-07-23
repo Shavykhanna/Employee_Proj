@@ -5,23 +5,23 @@
         <h4>Employee Registeration!</h4>
       
 <hr/>
-    <form ng-click="add()">
+    <form [formGroup]="frm" (ngSubmit)="submitemployee($event)">
     <div class="form-row">
         <div class="form-group">
-            <label for="employeefname">First Name</label>
-            <input type="text" class="form-control" ng-model="employeefname" id="employeefname" placeholder="Enter First Name" required>
+            <label for="FirstName">First Name</label>
+            <input type="text" class="form-control" id="FirstName" placeholder="Enter First Name" required>
         </div> <br/>
 
             <div class="form-group">
-                <label for="employeelname">Last Name</label>
-                <input type="text" class="form-control" ng-model="employeelname" id="employeelname" placeholder="Enter Last Name" required>
+                <label for="LastName">Last Name</label>
+                <input type="text" class="form-control" id="LastName" placeholder="Enter Last Name" required>
             </div>
         <br/>
     </div>
     <div class="form-row">
         <div class="form-group">
-            <label for="employeetaddress2">Phone Number</label>
-            <input type="text" class="form-control" ng-model="employeephone" id="employeephone" placeholder="Enter Phone Number" required>
+            <label for="PhoneNumber">Phone Number</label>
+            <input type="text" class="form-control" id="PhoneNumber" placeholder="Enter Phone Number" required>
         </div>
         <br/>
        
@@ -43,7 +43,7 @@
         </div>
         <div class="form-group">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" ng-model="employeeagree" id="employeeagree" required> 
+                <input class="form-check-input" type="checkbox" id="employeeagree" required> 
                 <label class="form-check-label" for="employeeagree">
                     I confirm that I agree to the terms and conditions of Employee Management System
                 </label>
@@ -52,7 +52,7 @@
         <br/>
         <div class="form-row">
         <div class="form-group">
-         <button type="submit" class="btn btn-success btn-lg btn-block form-control" ng-model="employeeaddbtn" id="employeeaddbtn"> Add Employee</button>
+         <button type="submit" class="btn btn-success btn-lg btn-block form-control" id="employeeaddbtn"> Add Employee</button>
         </div>
 </div>
 </form>

@@ -4,7 +4,7 @@
 <br/>
 <div class="container">
     <div class="row">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover" *ngIf="show; else showLoading">
                 <thead>
                     <tr class="table-active">
                         <th>Employee ID</th>
@@ -14,22 +14,22 @@
                 </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td colspan="2" class="table-active">John</td>
-                        <td>04672382927</td>
-                        <td class="table-active">
-                            <button type="submit" class="btn btn-success" id="clienteditbtn">
+                    <tr *ngFor="let employee of employees">
+                        <td>{{employee.id}}</td>
+                        <td colspan="2" class="table-active"> {{employee.firstName}} {{employee.lastName}}  </td>
+                        <td>{{employee.phoneNumber}}</td>
+                         <td class="table-active">
+                            <button type="submit" class="btn btn-success" id="clienteditbtn" onclick='/employees/update'>
                                 Edit
                             </button>
-                        </td>
-                        <td>
+                         </td>
+                         <td>
                             <button type="submit" class="btn btn-danger" id="clientdeletebtn">
                                 Delete
                             </button>
-                        </td>
+                         </td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                       <th>2</th>
                       <td colspan="2" class="table-active">Kristine</td>
                       <td>0438272829</td>
@@ -58,8 +58,13 @@
                             Delete
                         </button>
                     </td>
-                </tr>
+                </tr> -->
                 </tbody>
             </table>
+
+<ng-template #showLoading>
+    Loading...
+</ng-template>
+
         </div>
     </div>

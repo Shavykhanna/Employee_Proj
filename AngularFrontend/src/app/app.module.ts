@@ -8,6 +8,10 @@ import { ViewEmployeeComponent } from './components/view-employee/view-employee.
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './components/update-employee/update-employee.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,9 @@ import { UpdateEmployeeComponent } from './components/update-employee/update-emp
       { path: 'employee', component: ViewEmployeeComponent },
       { path: 'employee/add', component: AddEmployeeComponent },
       { path: 'employee/update/:id', component: UpdateEmployeeComponent }
-    ])
+    ]),
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

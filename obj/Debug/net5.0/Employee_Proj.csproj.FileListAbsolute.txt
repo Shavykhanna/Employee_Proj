@@ -71,3 +71,10 @@
 /Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/AngularFrontend/src/tslint.json
 /Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/AngularFrontend/tsconfig.json
 /Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/AngularFrontend/tslint.json
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/System.Web.Cors.dll
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/System.Net.Http.Formatting.dll
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/System.Web.Http.dll
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/System.Web.Http.Cors.dll
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
+/Volumes/work/Projects/Employee_Proj/Employee_Proj/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
